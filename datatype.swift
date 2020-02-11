@@ -6,3 +6,13 @@ var e: Character = "c"
 var f: String = "hello world"
 
 print(a, b, c, d, e, f)
+
+let g: String = "Hoge"
+let h: String = "Hello, " + g + "-san."
+
+print(h)
+
+var i: String = "I am"
+i += " Iron Man."
+
+print(i)
