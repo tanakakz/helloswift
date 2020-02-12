@@ -16,3 +16,8 @@ var i: String = "I am"
 i += " Iron Man."
 
 print(i)
+
+var j: Int = 8
+let str: String = "\(j)の2乗数は\(j*j)です。"
+print(str)
+
