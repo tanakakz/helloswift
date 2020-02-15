@@ -11,3 +11,12 @@ var g = 1.2
 var f = [ g/2.0, g/0.3, g/0.04 ]
 print(f)
 
+let digits = [ "00", "01", "02", "03" ]
+print(digits[2])
+print(digits.count)
+
+var nums = digits
+nums[2] = "Two"
+//digits[2] = "Two"
+print(digits[2])
+print(nums)
