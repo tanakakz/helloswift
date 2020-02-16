@@ -20,3 +20,14 @@ nums[2] = "Two"
 //digits[2] = "Two"
 print(digits[2])
 print(nums)
+
+var roman = ["I", "II", "III"]
+roman.append("IV")
+print(roman)
+
+let m = roman + ["5", "6"]
+print(m)
+
+roman += ["V", "VI"]
+print(roman)
+
