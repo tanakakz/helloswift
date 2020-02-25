@@ -15,3 +15,13 @@ if a >= 0 {
 }
 print(b)
 
+let c = a >= 0 ? a : -a
+print(c)
+
+let val = 10032
+var i = 1, mask = 2
+while mask <= val {
+  mask <<= 1
+  i += 1
+}
+
