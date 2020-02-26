@@ -25,3 +25,14 @@ while mask <= val {
   i += 1
 }
 
+var n = 7
+repeat {
+  print("\(n) ", terminator:"") // 改行しない
+  if n % 2 == 0 {
+    n /= 2
+  } else {
+    n = n * 3 + 1
+  }
+} while n > 1
+print(n) // 改行して終わり
+
