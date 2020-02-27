@@ -36,3 +36,13 @@ repeat {
 } while n > 1
 print(n) // 改行して終わり
 
+for i in 1 ..< 10 {
+        var line = ""
+        for j in 1 ..< 10 {
+                let n = i * j
+                if n < 10 { line += " " }
+                line += "\(n)"
+        }
+        print(line)
+}
+
