@@ -46,3 +46,12 @@ for i in 1 ..< 10 {
         print(line)
 }
 
+let targetname = "koko"
+let group = [ "jonah", "visha", "koko", "valmet", "tanya" ]
+for s in group {
+        if targetname == s {
+                print("\(s) が見つかりました")
+                break
+        }
+}
+
