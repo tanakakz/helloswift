@@ -55,3 +55,14 @@ for s in group {
         }
 }
 
+var x = Int.random(in: 0 ..< 10)
+switch x {
+        case 0: print("none")
+        case 1: x += 1
+        case 2, 3:
+            print("a few")
+        case 4, 5:
+            print("some")
+        default:
+            print("several")
+}
