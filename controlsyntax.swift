@@ -66,3 +66,15 @@ switch x {
         default:
             print("several")
 }
+
+let 追試下限 = 45
+var score = Int.random(in: 0 ..< 100)
+switch score {
+        case 追試下限..<75: print("追試験")
+        case 90...100: print("秀")
+        case 80..<90: print("優")
+        case 70..<80: print("良")
+        case 60..<70: print("可")
+        default: print("不可")
+}
+
