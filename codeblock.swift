@@ -9,3 +9,15 @@ if a >= 0 {
   }
   print(a, b, c, t)
 }
+
+let blood = "O"
+search: do {
+  for t in [ "A", "B", "O", "AB" ] {
+    if blood == t {
+      print("見つかりました", t)
+      break search
+    }
+  }
+  print("見つかりませんでした")
+}
+
