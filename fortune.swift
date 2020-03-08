@@ -1,3 +1,4 @@
+#!/usr/bin/swift
 import Foundation
 
 let fortune = ["大吉\u{2661}", "中吉\u{266a}", "小吉",
