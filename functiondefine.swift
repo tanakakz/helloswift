@@ -20,3 +20,11 @@ func buy(product:Int, price:Int, quantity:Int) {
 }
 
 buy(product:19090, price:180000, quantity:1)
+
+func messageA() -> String {
+  return "現在の値は\(total)です。"
+}
+func messageB() -> String { "現在の値は\(total)です。" }
+
+print(messageA())
+print(messageB())
