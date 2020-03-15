@@ -39,3 +39,7 @@ func nonlabelarea(_ h:Double, _ w:Double) -> Double {
   return h * w
 }
 print(nonlabelarea(10.0, 12.5))
+
+func compare(_ a:Int, _ b:Int, option _:Bool) {
+}
+compare(10, 8, option:true)
