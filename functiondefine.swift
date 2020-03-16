@@ -43,3 +43,7 @@ print(nonlabelarea(10.0, 12.5))
 func compare(_ a:Int, _ b:Int, option _:Bool) {
 }
 compare(10, 8, option:true)
+
+for _ in 1...10 {
+  print("for loop index isn't used.")
+}
