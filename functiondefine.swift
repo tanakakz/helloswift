@@ -47,3 +47,10 @@ compare(10, 8, option:true)
 for _ in 1...10 {
   print("for loop index isn't used.")
 }
+
+func myswap(_ a: inout Int, _ b: inout Int) {
+  let t = a; a = b; b = t
+}
+var x = 100, y = 0
+myswap(&x, &y)
+print(x, y)
