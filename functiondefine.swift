@@ -54,3 +54,18 @@ func myswap(_ a: inout Int, _ b: inout Int) {
 var x = 100, y = 0
 myswap(&x, &y)
 print(x, y)
+
+let fontSize: Float = 12.0
+func setFont(name:String, size:Float = fontSize, bold:Bool = false) {
+  print("\(name) \(size)" + (bold ? " [B]" : ""))
+}
+setFont(name:"RaglanPunch")
+setFont(name:"Courier", bold:true)
+setFont(name:"Times", size:16.0, bold:true)
+
+func setGray(level:Int = 255, _ alpha:Float = 1.0) {
+  print("Glay=\(level), Alpha=\(alpha)")
+}
+setGray()
+setGray(level:240)
+setGray(level:128, 0.5)
