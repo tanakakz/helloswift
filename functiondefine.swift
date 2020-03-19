@@ -69,3 +69,13 @@ func setGray(level:Int = 255, _ alpha:Float = 1.0) {
 setGray()
 setGray(level:240)
 setGray(level:128, 0.5)
+
+func dayOfWeek(_ y:Int, _ m:Int, _ d:Int) -> Int {
+  var y = y, m = m
+  if m < 3 {
+    m += 12; y -= 1
+  }
+  let leap = y + y / 4 - y / 100 + y / 400
+  return (leap + (13 * m + 8) / 5 + d) % 7
+}
+print(dayOfWeek(2020, 3, 19))
