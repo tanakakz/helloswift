@@ -79,3 +79,14 @@ func dayOfWeek(_ y:Int, _ m:Int, _ d:Int) -> Int {
   return (leap + (13 * m + 8) / 5 + d) % 7
 }
 print(dayOfWeek(2020, 3, 19))
+
+@discardableResult
+func sayHello(to n:String) -> Bool {
+  print("Hello, \(n)!")
+  return (n == "Swift")
+}
+sayHello(to:"World")
+let res = sayHello(to:"Swift")
+print(res)
+
+
