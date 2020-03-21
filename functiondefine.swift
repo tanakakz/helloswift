@@ -89,4 +89,16 @@ sayHello(to:"World")
 let res = sayHello(to:"Swift")
 print(res)
 
+func kuku81() {
+  func cross(_ a:Int, _ b:Int) {
+    print(a*b, terminator:" ")
+  }
+  for a in 1...9 {
+    for b in 1...9 {
+      cross(a, b)
+    }
+    print("")
+  }
+}
+kuku81()
 
