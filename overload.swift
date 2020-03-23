@@ -13,3 +13,12 @@ print("s=\(s), t=\(t)")
 
 mySwap(&x, &y, &z)
 print("x=\(x), y=\(y), z=\(z)")
+
+func mySwap(little a: inout Int, great b: inout Int) {
+  if a > b {
+    mySwap(&a, &b)
+  }
+}
+var ls = 10, gt = 20
+mySwap(little:&ls, great:&gt)
+print("ls=\(ls), gt=\(gt)")
