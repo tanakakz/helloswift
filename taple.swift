@@ -12,3 +12,11 @@ print("\(img.1)x\(img.2)")
 let photo = ("tiger.jpg", 640, 800)
 let (file, width, height) = photo
 print("\(file): \(width)x\(height)")
+
+var (fibo1, fibo2) = (0, 1)
+print(fibo1, terminator:" ")
+for _ in 0 ..< 50 {
+    (fibo1, fibo2) = (fibo2, fibo1 + fibo2)
+    print(fibo1, terminator:" ")
+}
+print()
