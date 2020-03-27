@@ -8,3 +8,7 @@ var img : (String, Int, Int) = cat
 print("\(img.0): \(img.1)x\(img.2)")
 img.2 = 800
 print("\(img.1)x\(img.2)")
+
+let photo = ("tiger.jpg", 640, 800)
+let (file, width, height) = photo
+print("\(file): \(width)x\(height)")
