@@ -8,3 +8,5 @@ func BMI(tall:Double, weight:Double) -> (Double, Double) {
 let result = BMI(tall:177.0, weight:80.0)
 print(result)
 
+let result2 = BMI(tall:173.0, weight:84.0)
+print(result2)
