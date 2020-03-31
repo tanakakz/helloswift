@@ -20,3 +20,7 @@ for _ in 0 ..< 50 {
     print(fibo1, terminator:" ")
 }
 print()
+
+let photo2 = (file:"tiger.jpg", width:640, height:800)
+print(photo2.0)
+print(photo2.file)
