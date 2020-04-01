@@ -24,3 +24,6 @@ print()
 let photo2 = (file:"tiger.jpg", width:640, height:800)
 print(photo2.0)
 print(photo2.file)
+
+let image = (file:"crab.svg", 1024, 720)
+let movie = (title:"story", time:64)
