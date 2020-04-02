@@ -27,3 +27,5 @@ print(photo2.file)
 
 let image = (file:"crab.svg", 1024, 720)
 let movie = (title:"story", time:64)
+
+print((7,29,"bee") == (7,31-2,"be"+"e"))
