@@ -29,3 +29,7 @@ let image = (file:"crab.svg", 1024, 720)
 let movie = (title:"story", time:64)
 
 print((7,29,"bee") == (7,31-2,"be"+"e"))
+
+let s: (month:Int, day:Int, name:String) = (4, 24, "卯月")
+let t: (day:Int, month:Int, String) = s
+print( s == t )
