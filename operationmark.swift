@@ -9,3 +9,8 @@ var c1 = sw1 || f() //swがtrueならf()は実行しない。c1はtrue。
 
 let sw2 = true
 var c2 = sw2 && g() //swがfalseならg()は実行しない。c2はfalse。
+
+let a: UInt8 = 1
+for n in [ 2, 8, 10, -1 ] {
+  print(a &<< n)
+}
