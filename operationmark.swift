@@ -61,3 +61,18 @@ for x in [ 0.9, 1.25, -1.0, 2.0, 0.86 ] {
   ia >? x
 }
 print(ia)
+
+precedencegroup RoundPrecedence {
+  higherThan: AdditionPrecedence // +, - 
+  lowerThan: MultiplicationPrecedence // *, /, %
+}
+
+infix operator %% : RoundPrecedence
+
+func %% (lhs: Int, rhs: Int) -> Int {
+  return lhs - lhs % rhs
+}
+
+print( 873151 %% 100 )
+print( 1 + 7231 %% 10 * 2 )
+
