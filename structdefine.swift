@@ -21,3 +21,12 @@ struct Time {
   var hour = 0, min = 0
 }
 var t3 = Time(in24h:true, hour:7, min:0)
+
+struct SimpleDate2 {
+  var year, month, day: Int
+  init() {
+    year = 2095; month = 10; day = 31
+  } // can write this: self.year = 2095
+}
+var m = SimpleDate2()
+print(m.year)
