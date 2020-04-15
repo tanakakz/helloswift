@@ -30,3 +30,26 @@ struct SimpleDate2 {
 }
 var m = SimpleDate2()
 print(m.year)
+
+struct Time2 {
+  let in24h: Bool
+  var hour = 0, min = 0
+  init(hour:Int, min:Int) {
+    in24h = false
+    self.hour = hour
+    self.min = min
+  }
+  init(hourIn24 h:Int) {
+    in24h = true
+    hour = h
+  }
+  init(_ hour:Int) {
+    self.init(hourIn24: hour)
+    // in24h = false // will be error.
+  }
+}
+var t21 = Time2(hour:10, min:30)
+var t22 = Time2(hourIn24: 15)
+var t23 = Time2(1)
+// var t24 = Time2() // will be error.
+// var t25 = Time2(in24h:true, hour:13, min:30) // will be error.
