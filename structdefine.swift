@@ -53,3 +53,8 @@ var t22 = Time2(hourIn24: 15)
 var t23 = Time2(1)
 // var t24 = Time2() // will be error.
 // var t25 = Time2(in24h:true, hour:13, min:30) // will be error.
+
+struct DateWithTime {
+  var date = SimpleDate2()
+  var time = Time2(hour:0, min:15)
+}
