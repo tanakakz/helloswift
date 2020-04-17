@@ -58,3 +58,6 @@ struct DateWithTime {
   var date = SimpleDate2()
   var time = Time2(hour:0, min:15)
 }
+var u = DateWithTime()
+print(u.date.year)
+print(u.time.min)
