@@ -17,3 +17,9 @@ struct PointOfTime {
   }
 }
 
+var a = PointOfTime(year:2014, month:11, day:7, hour:14, min:55)
+print(a.date.month)
+print(a.time.min)
+var b = PointOfTime.Date(year:2022, month:11, day:6)
+print(b.year)
+a.time = PointOfTime.Time(10,21)
