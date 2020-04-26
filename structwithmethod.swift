@@ -96,9 +96,6 @@ struct Clock2 {
       self.min = m
     }
   }
-  mutating func inc() {
-    self.advance(min: 1)
-  }
   func toString() -> String {
     let h = hour < 10 ? " \(hour)" : "\(hour)"
     let m = min < 10 ? "0\(min)" : "\(min)"
@@ -113,8 +110,8 @@ struct Clock2 {
     lhs.advance(min:rhs)
   }
 }
-let tic Clock(hour:19, min:40)
-var tac = tic + 75
-print(tac.toString())
-tac += 125
-print(tac.toString())
+let tic2 = Clock2(hour:19, min:40)
+var tac2 = tic2 + 75
+print(tac2.toString())
+tac2 += 125
+print(tac2.toString())
