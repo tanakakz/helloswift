@@ -52,9 +52,11 @@ struct LCD {
 }
 let display1 = LCD(size: LCD.Size(width:800, height:600))
 display1.show()
+
 LCD.stdHeight = 1200
 let display2 = LCD()
 display2.show()
+
 LCD.stdWidth = 2560
 let display3 = LCD()
 display3.show()
