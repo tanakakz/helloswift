@@ -50,6 +50,7 @@ struct LCD {
     print(serial, "(\(size.width)x\(size.height))")
   }
 }
+
 let display1 = LCD(size: LCD.Size(width:800, height:600))
 display1.show()
 
