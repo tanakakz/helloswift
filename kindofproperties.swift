@@ -61,3 +61,20 @@ display2.show()
 LCD.stdWidth = 2560
 let display3 = LCD()
 display3.show()
+
+struct Ounce {
+  var mL:Double = 0.0
+  static let ounceUS = 29.5735
+  
+  init(ounce:Double) {
+    self.ounce = ounce
+  }
+  var ounce: Double {
+    get { mL / Ounce.ounceUS }
+    set { mL = newValue * Ounce.ounceUS }
+  }
+}
+var oa = Ounce(ounce:2.0)
+print(oa.mL)
+oa.ounce += 8.0
+print(oa.ounce)
