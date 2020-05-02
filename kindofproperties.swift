@@ -78,3 +78,8 @@ var oa = Ounce(ounce:2.0)
 print(oa.mL)
 oa.ounce += 8.0
 print(oa.ounce)
+
+var ob = Ounce(ounce:2.0)
+print("\(oa.mL)mL, \(ob.mL)mL")
+swap(&oa, &ob)
+print("\(oa.mL)mL, \(ob.mL)mL")
