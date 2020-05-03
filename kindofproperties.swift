@@ -83,3 +83,10 @@ var ob = Ounce(ounce:2.0)
 print("\(oa.mL)mL, \(ob.mL)mL")
 swap(&oa, &ob)
 print("\(oa.mL)mL, \(ob.mL)mL")
+
+swap(&oa.mL, &ob.mL)
+print("\(oa.mL)mL, \(ob.mL)mL")
+
+print("\(oa.ounce)oz, \(ob.ounce)oz")
+swap(&oa.ounce, &ob.ounce)
+print("\(oa.ounce)oz, \(ob.ounce)oz")
