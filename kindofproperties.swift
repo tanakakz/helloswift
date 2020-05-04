@@ -90,3 +90,7 @@ print("\(oa.mL)mL, \(ob.mL)mL")
 print("\(oa.ounce)oz, \(ob.ounce)oz")
 swap(&oa.ounce, &ob.ounce)
 print("\(oa.ounce)oz, \(ob.ounce)oz")
+
+var z: Double = 0.1
+swap(&oa.ounce, &z)
+print("\(oa.ounce)oz, \(z)")
