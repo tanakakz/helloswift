@@ -17,3 +17,9 @@ struct Stock {
     }
   }
 }
+
+var st = Stock(price:400)
+st.price = 410
+st.price = 380
+st.price = 430
+print("\(st.count), \(st.high)")
