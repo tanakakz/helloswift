@@ -15,3 +15,11 @@ let year3 : Int? = Int("令和20年") // year is nil
 
 var year4 : Int? = Int("2020")
 year4! += 4 // need publication. year is 2024
+
+var nagano : Int? = Int("1998")
+if nagano != nil { // true. not need publication
+  print("Nagano: \(nagano!)") // need publicaiton
+}
+if nagano == 2020 { // false. not use publication
+  print(2020)
+}
