@@ -23,3 +23,6 @@ if nagano != nil { // true. not need publication
 if nagano == 2020 { // false. not use publication
   print(2020)
 }
+
+var n: Int? = nil, t: Int? = 1000
+print(String(describing: n), "+", String(describing: t))
