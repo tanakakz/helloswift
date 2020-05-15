@@ -26,3 +26,8 @@ if nagano == 2020 { // false. not use publication
 
 var n: Int? = nil, t: Int? = 1000
 print(String(describing: n), "+", String(describing: t))
+
+let year5 : Int? = Int("1986")
+if let y = year5 {
+  print("ハレー彗星は\(y + 75)年にくる")
+}
