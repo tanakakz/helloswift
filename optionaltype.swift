@@ -31,3 +31,10 @@ let year5 : Int? = Int("1986")
 if let y = year5 {
   print("ハレー彗星は\(y + 75)年にくる")
 }
+
+let halley : Int? = Int("1986")
+if var halley = halley {
+  print("ハレー彗星は\(halley)に来た")
+  halley += 75
+  print("次は\(halley)年だと予想される")
+}
