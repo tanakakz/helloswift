@@ -38,3 +38,7 @@ if var halley = halley {
   halley += 75
   print("次は\(halley)年だと予想される")
 }
+
+if let sapporo = Int("1972"), let nagano = Int("1998") {
+  print("\(nagano - sapporo) years.")
+}
