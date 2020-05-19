@@ -42,3 +42,8 @@ if var halley = halley {
 if let sapporo = Int("1972"), let nagano = Int("1998") {
   print("\(nagano - sapporo) years.")
 }
+
+var nagano2 = 1998
+if nagano2 < 2000, let tokyo2 = Int("2020"), tokyo2 > nagano2 {
+  print("\(tokyo2 - nagano2)")
+}
